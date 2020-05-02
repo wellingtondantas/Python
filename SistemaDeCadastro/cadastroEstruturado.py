@@ -1,4 +1,4 @@
-#Lista com o nome dos funcionarios
+#Lista o nome dos funcionarios
 listFuncionario=[]
 
 
@@ -13,7 +13,7 @@ def menu():
     opcao = input('Digite a opção desejada:')
     return opcao
 
-#Função para adicionar alunos
+#Função para adicionar funcionarios
 def addFuncionario():
     nomeFuncionario = str(input('Digite o nome do funcionário:'))
     nomeFuncionario=nomeFuncionario.upper()
@@ -24,6 +24,8 @@ def addFuncionario():
         print('funcionário cadastro')
     pass
 
+
+#Função para editar funcionarios
 def editarFuncionario(nome):
     i=0;
 
@@ -40,6 +42,7 @@ def editarFuncionario(nome):
         print('Funcionário não encontrado')
     pass
 
+#Função para lista todos os funcionarios
 def listarFuncionario():
     if len(listFuncionario)==0:
         print('Nenhum funcionário cadastro')
@@ -48,6 +51,7 @@ def listarFuncionario():
             print('%d - %s' %(id,item))
     pass
 
+#Função para remove funcionario
 def removerFuncionario(nome):
 
     if nome in listFuncionario:
@@ -64,6 +68,7 @@ def removerFuncionario(nome):
 def leiaMe():
     print("Bem-vindo ao meu primeiro programa em Python - version 1.0")
 
+#Retorna alguns informações e o menu
 leiaMe()
 opcao=menu()
 
