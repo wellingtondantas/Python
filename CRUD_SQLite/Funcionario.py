@@ -1,6 +1,6 @@
 #Remove as instruções do banco de dados (caso exista) e criar outras instruções
-import os
-os.remove("db.db") if os.path.exists("db.db") else None
+#import os
+#os.remove("db.db") if os.path.exists("db.db") else None
 
 #Importa o módulo de acesso ao SQLite
 import sqlite3
@@ -12,7 +12,7 @@ conexao = sqlite3.connect('db.db')
 inst = conexao.cursor()
 
 # Executa a instrução SQL no cursor
-inst.execute('create table funcionario' '(id integer primary key,' 'nome varchar(20),' 'sobrenome varchar(20),' 'idade integer,' 'sexo char(1))')
+#inst.execute('create table funcionario' '(id integer primary key,' 'nome varchar(20),' 'sobrenome varchar(20),' 'idade integer,' 'sexo char(1))')
 
 
 
